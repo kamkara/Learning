@@ -1,0 +1,17 @@
+
+<% @posts.each do |post| %>
+<div class="row">
+  <div class="col-6">
+    <%= post.title %>
+  </div>
+</div>
+<% end %>
+
+<% @comments.each do |comment| %>
+<div class="row">
+  <div class="col-6">
+    <%= comment.id %>
+    <%= comment.body %>
+  </div>
+</div>
+<% end %>
